@@ -1,16 +1,21 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Kanban Board</title>
     <link href="styles.css" rel="stylesheet">
-    <link rel="icon" href="assets/favicon.png" type="image/png"> 
-  </head>
+    <link rel="icon" href="assets/favicon.svg" type="image/png"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
 
-  <body>
+<body>
     <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
-    <nav>
+    <nav class="navigation">
       <div>
+        <img class="logo-image" src="assets/logo-light.svg" alt="logo-image">
         <h4>ALL BOARDS (1)</h4>
         <button>Launch Career</button>
       </div>
@@ -18,16 +23,16 @@
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
     <div>
-      <header>
+      <header class="header">
         <div>
           <h2>Launch Career</h2>
         </div>
       </header>
 
-      <div>
-        <main>
+      <div class="main-background">
+        <main class="main">
           <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
-          <div>
+          <div class="to-do">
             <div>
               <span></span>
               <h4>TODO</h4>
@@ -36,10 +41,12 @@
             <div>
               <div>Launch Epic Career 🚀</div>
               <div>Learn Data Structures and Algorithms 📚</div>
+              <div></div>
+              <div></div>
             </div>
           </div>
           <!-- DOING Column -->
-          <div>
+          <div class="doing">
             <div>
               <span></span>
               <h4>DOING</h4>
@@ -51,7 +58,7 @@
             </div>
           </div>
           <!-- DONE Column -->
-          <div>
+          <div class="done">
             <div>
               <span></span>
               <h4>DONE</h4>
@@ -65,5 +72,5 @@
         </main>
       </div>
     </div>
-  </body>
+</body>
 </html>
