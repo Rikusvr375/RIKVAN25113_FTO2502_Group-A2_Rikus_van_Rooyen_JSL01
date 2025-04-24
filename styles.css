@@ -49,9 +49,31 @@ nav {
   height: 100%;
 }
 
-.column {
+/* DIFFERENT CARD BOXES */
+
+.to-do-card {
+  border: 0px none;
+  background-color: #FFFFFF;
   padding: 20px;
+  margin-bottom: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px #364E7E1A;
 }
 
+.doing-card {
+  border: 0px none;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #364E7E1A;
+}
+
+.done-card {
+  border: 0px none;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px #364E7E1A;
+}
