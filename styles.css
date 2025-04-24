@@ -1,3 +1,5 @@
+/* RIKVAN25113_FTO2502_Group-A2_Rikus_van_Rooyen_JSL01 
+CSS STYLESHEET */
 
 body {
   /* layout   */
@@ -14,28 +16,58 @@ body {
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  background-color: #F4F7FD;
 }
 
 .logo-image {
-    width: 70%;
+    width: 153px;
     height: 30px;
+    padding: 32px 20px 33px 34px;
+}
+
+.all-boards {
+    padding-left: 34px;
+    color: #828FA3;
+    font-size: 12px;
 }
 
 nav {
   grid-area: nav;
-  padding: 20px;
+  padding: 0px;
   border-right: 1px solid #ddd;
+  background-color: #FFFFFF;
+}
+
+header {
+  background-color: #F4F7FD;
+}
+
+.launch-career-btn {
+  background-color: #635FC7;
+  color: #FFFFFF;
+  width: 276px;
+  border: 0px;
+  padding: 14px 92px 15px 32px;
+  border-radius: 0px 100px 100px 0px;
+  font-size: 15px;
 }
 
 .header {
   grid-area: header;
   border-bottom: 1px solid #ddd;
+  background-color: #FFFFFF;
 }
 
 .header-specifics {
-    padding-top: 9.08px;
-    padding-bottom: 9.08px;
     margin-left: 24px;
+}
+
+p {
+  padding-bottom: 18px;
+  background-color: #FFFFFF;
+  font-size: 24px;
+  margin-top: 0px;
+  padding-top: 24px;
 }
 
 .main {
@@ -47,6 +79,38 @@ nav {
   background-color: #F4F7FD;
   min-height: 0;
   height: 100%;
+}
+
+/* CARD HEADERS */
+
+.todo-heading,
+.doing-heading,
+.done-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  color: #828FA3;
+  font-size: 12px;
+}
+
+/* HEADING DOTS */
+
+.status-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.todo-dot {
+  background-color: #49C4E5; 
+}
+
+.doing-dot {
+  background-color: #8471F2;  
+}
+
+.done-dot {
+  background-color: #67E2AE; 
 }
 
 /* DIFFERENT CARD BOXES */
@@ -76,4 +140,49 @@ nav {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px #364E7E1A;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 400px) {
+  body {
+    grid-template-areas: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  header .main-background {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-specifics {
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 18px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    padding: 11px 0px 10px 16px;
+    font-size: 18px;
+  }
+
+  .media-image {
+    width: 24px;
+    height: 25px;
+    padding: 10px 0px 0px 16px;
+  }
+}
+
+@media (min-width: 400px) {
+  .media-image {
+    display: none;
+  }
 }

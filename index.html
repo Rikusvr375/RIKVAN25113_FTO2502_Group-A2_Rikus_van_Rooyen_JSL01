@@ -16,16 +16,17 @@
     <nav>
         <img class="logo-image" src="assets/logo-light.svg" alt="logo-image">
       <div class="navigation">
-        <h4>ALL BOARDS (1)</h4>
-        <button>Launch Career</button>
+        <h4 class="all-boards">ALL BOARDS (1)</h4>
+        <button class="launch-career-btn">Launch Career</button>
       </div>
     </nav>
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
-    
+    <div>
       <header class="header">
         <div class="header-specifics">
-          <h2>Launch Career</h2>
+          <img class="media-image" src="assets/favicon.svg" alt="favicon-image">  
+          <p>Launch Career</p>
         </div>
       </header>
 
@@ -33,44 +34,44 @@
         <main class="main">
           <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
           <div class="to-do">
-            <div>
-              <span></span>
-              <h4>TODO</h4>
+            <div class="todo-heading">
+              <span class="status-dot todo-dot"></span>
+              <h4>TODO (4)</h4>
             </div>
             <!-- Tasks container for TODO -->
             <div>
               <div class="to-do-card">Launch Epic Career 🚀</div>
-              <div class="to-do-card">Learn Data Structures and Algorithms 📚</div>
-              <div class="to-do-card"></div>
-              <div class="to-do-card"></div>
+              <div class="to-do-card">Conquer React ⚛️</div>
+              <div class="to-do-card">Understand Databases ⚙️</div>
+              <div class="to-do-card">Crush Frameworks 🖼️ </div>
             </div>
           </div>
           <!-- DOING Column -->
           <div class="doing">
-            <div>
-              <span></span>
-              <h4>DOING</h4>
+            <div class="doing-heading">
+              <span class="status-dot doing-dot"></span>
+              <h4>DOING (2)</h4>
             </div>
             <!-- Tasks container for DOING -->
             <div>
               <div class="doing-card">Master JavaScript 💛</div>
-              <div class="doing-card">Keep on Going 🏆</div>
+              <div class="doing-card"> Never Give Up 🏆</div>
             </div>
           </div>
           <!-- DONE Column -->
           <div class="done">
-            <div>
-              <span></span>
-              <h4>DONE</h4>
+            <div class="done-heading">
+              <span class="status-dot done-dot"></span>
+              <h4>DONE (2)</h4>
             </div>
             <!-- Tasks container for DONE -->
             <div>
-              <div class="done-card">Contribute to Open Source Projects 🌐</div>
-              <div class="done-card">Build Portfolio Projects 🛠️</div>
+              <div class="done-card">Explore ES6 Features 🚀</div>
+              <div class="done-card">Have fun 🥳</div>
             </div>
           </div>
         </main>
       </div>
-    
+    </div>
 </body>
 </html>
